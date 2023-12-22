@@ -1,0 +1,20 @@
+## Stéganographie d'image bmp
+
+### Génération du PDF du Rapport
+Pour générer le PDF du rapport, allez dans le dossier "latex" (cd latex) puis utilisez la commande suivante :
+```pdflatex Fouefack_StéganographieBMP.tex
+
+### compilation et execution
+Pour la compilation du code, allez dans le dossier "code" puis utilisez la commande suivante :
+```make run
+
+## Utilisation
+Une fois lancé, le menu d'options s'affiche :
+
+2- Permet de cacher le contenu du fichier "secret" dans l'image "imageOutput.bmp" en choisissant la position du bit qui serait remplacé.
+
+3- Permet de cacher le contenu du fichier "secret2" (ce fichier est 4 fois plus grand que le fichier secret) dans l'image "imageUpToPosition.bmp" en choisissant le nombre de bits à remplacer à partir de la position zéro (cette opération permet de dissimuler une quantité beaucoup plus importante de données).
+
+4- Permet d'extraire les données dissimulées à l'option 2. À la fin de cette opération, le fichier "extractFile" est généré. Cette extraction nécessite la taille des données que l'on souhaite extraire et la position de dissimulation des données.
+
+5- Extrait et stocke dans le fichier "extractFileMulti" les données dissimulées à l'option 3. Il faut fournir le nombre de bits à extraire sur chaque composant ainsi que la taille totale des données à extraire.
